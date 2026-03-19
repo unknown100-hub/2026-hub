@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Tracker - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-title" id="title"><b>EDU-TRACKER</b></h1>
+            <ul class="nav-list">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Login Container -->
+    <div class="login-container">
+        <form class="login-box">
+            <div class="login-header">
+                <h2>Welcome Back</h2>
+                <p>Please log in to continue</p>
+            </div>
+
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <div class="form-group checkbox">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember" class="checkbox-label">Remember me</label>
+            </div>
+
+            <button type="submit" class="login-btn">Login</button>
+
+            <div class="login-footer">
+                <p>Don't have an account? <a href="#" id="toggle-signup">Sign up</a></p>
+                <p><a href="#">Forgot password?</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!-- Sign Up Container -->
+    <div class="login-container signup-container" id="signup-container" style="display: none;">
+        <form class="login-box signup-box">
+            <div class="login-header">
+                <h2>Create Account</h2>
+                <p>Please fill in the details to get started</p>
+            </div>
+
+            <div class="form-group">
+                <label for="signup-username">Full Name</label>
+                <input type="text" id="signup-username" name="signup-username" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="signup-email">Email Address</label>
+                <input type="email" id="signup-email" name="signup-email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="signup-username-field">Username</label>
+                <input type="text" id="signup-username-field" name="signup-username-field" placeholder="Choose a username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="signup-password">Password</label>
+                <input type="password" id="signup-password" name="signup-password" placeholder="Create a strong password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="signup-confirm-password">Confirm Password</label>
+                <input type="password" id="signup-confirm-password" name="signup-confirm-password" placeholder="Confirm your password" required>
+            </div>
+
+            <div class="form-group checkbox">
+                <input type="checkbox" id="agree-terms" name="agree-terms" required>
+                <label for="agree-terms" class="checkbox-label">I agree to the Terms and Conditions</label>
+            </div>
+
+            <button type="submit" class="login-btn signup-btn">Create Account</button>
+
+            <div class="login-footer">
+                <p>Already have an account? <a href="#" id="toggle-login">Log in</a></p>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
