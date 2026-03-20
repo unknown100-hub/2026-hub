@@ -48,10 +48,10 @@ loginForm.addEventListener("submit", function(e) {
         btn.style.background = "linear-gradient(135deg, #52c41a 0%, #52c41a 100%)";
         
         setTimeout(() => {
-            alert(`Welcome back, ${username}!`);
-            loginForm.reset();
-            btn.innerHTML = "Login";
-            btn.style.background = "linear-gradient(135deg, #667eea 0%, #764ba2 100%)";
+            // Store username in session storage
+            sessionStorage.setItem("loggedInUser", username);
+            // Redirect to dashboard
+            window.location.href = "dashboard.html";
         }, 1500);
     } else {
         alert("Please fill in all fields!");
@@ -96,8 +96,10 @@ signupForm.addEventListener("submit", function(e) {
     btn.style.background = "linear-gradient(135deg, #52c41a 0%, #52c41a 100%)";
     
     setTimeout(() => {
-        alert(`Welcome, ${fullName}! Your account has been created successfully.`);
-        signupForm.reset();
+        // Store username in session storage
+        sessionStorage.setItem("loggedInUser", username);
+        // Redirect to dashboard
+        window.location.href = "dashboard.html";
         btn.innerHTML = "Create Account";
         btn.style.background = "linear-gradient(135deg, #667eea 0%, #764ba2 100%)";
         
