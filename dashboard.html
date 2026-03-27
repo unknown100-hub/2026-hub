@@ -59,35 +59,53 @@
             </div>
         </div>
 
-        <!-- Recent Activity Section -->
-        <div class="activity-section">
-            <h2>Recent Activity</h2>
-            <div class="activity-list">
-                <div class="activity-item">
-                    <div class="activity-dot"></div>
-                    <div class="activity-content">
-                        <p class="activity-title">Completed: Python Basics Module</p>
-                        <p class="activity-time">2 hours ago</p>
-                    </div>
+    <!-- Study Tracker Section -->
+    <div class="activity-section tracker-section">
+        <h2>Study Tracker</h2>
+        <div class="tracker-grid" id="tracker-grid"></div>
+    </div>
+
+    <div class="activity-section study-advisor" id="study-advisor">
+        <h2>Study Advisor</h2>
+        <p id="advisor-summary">Your study advisor will recommend what to review and which resources to use so you can pass next time.</p>
+        <div class="advisor-cards" id="advisor-cards"></div>
+    </div>
+
+    <div class="activity-section resource-section">
+        <h2>Available Resources</h2>
+        <div class="resource-list" id="resource-list"></div>
+    </div>
+
+    <!-- Recent Activity Section -->
+    <div class="activity-section">
+        <h2>Recent Activity</h2>
+        <div class="activity-list">
+            <div class="activity-item">
+                <div class="activity-dot"></div>
+                <div class="activity-content">
+                    <p class="activity-title">Completed: Python Basics Module</p>
+                    <p class="activity-time">2 hours ago</p>
                 </div>
-                <div class="activity-item">
-                    <div class="activity-dot"></div>
-                    <div class="activity-content">
-                        <p class="activity-title">Scored 95% on JavaScript Quiz</p>
-                        <p class="activity-time">1 day ago</p>
-                    </div>
+            </div>
+            <div class="activity-item">
+                <div class="activity-dot"></div>
+                <div class="activity-content">
+                    <p class="activity-title">Scored 95% on JavaScript Quiz</p>
+                    <p class="activity-time">1 day ago</p>
                 </div>
-                <div class="activity-item">
-                    <div class="activity-dot"></div>
-                    <div class="activity-content">
-                        <p class="activity-title">Enrolled in Web Design Course</p>
-                        <p class="activity-time">3 days ago</p>
-                    </div>
+            </div>
+            <div class="activity-item">
+                <div class="activity-dot"></div>
+                <div class="activity-content">
+                    <p class="activity-title">Enrolled in Web Design Course</p>
+                    <p class="activity-time">3 days ago</p>
                 </div>
             </div>
         </div>
     </div>
+    </div>
 
+    <script src="study-api.js"></script>
     <script src="dashboard.js"></script>
 </body>
 </html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Tracker - Progress</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-title"><a href="dashboard.html">EDU-TRACKER</a></h1>
+            <ul class="nav-list">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="courses.html">My Courses</a></li>
+                <li><a href="progress.html">My Progress</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="index.html" id="logout-link">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="page-container">
+        <section class="section">
+            <h1>Learning Progress</h1>
+            <p>Track your latest achievements and find the areas where you can improve.</p>
+        </section>
+
+        <section class="stats-grid">
+            <div class="feature-card">
+                <h3>Total Completion</h3>
+                <p>65% overall progress across active courses.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Quizzes Passed</h3>
+                <p>12 quizzes passed with an average score of 89%.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Lessons Completed</h3>
+                <p>24 lessons completed this week.</p>
+            </div>
+        </section>
+
+        <section class="section progress-section">
+            <h2>Progress Breakdown</h2>
+            <div class="progress-item">
+                <span>Web Development</span>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 75%;"></div>
+                </div>
+            </div>
+            <div class="progress-item">
+                <span>Python Basics</span>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 88%;"></div>
+                </div>
+            </div>
+            <div class="progress-item">
+                <span>Web Design</span>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 42%;"></div>
+                </div>
+            </div>
+            <div class="progress-item">
+                <span>Cybersecurity</span>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 58%;"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
